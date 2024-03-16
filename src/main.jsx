@@ -4,6 +4,8 @@ import Root from "./routes/Root.jsx";
 import ReactDOM from "react-dom/client";
 import Homepage from "./routes/Homepage.jsx";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import NotFound from "./routes/NotFound";
+import AboutUs from "./routes/AboutUs";
 
 const router = createBrowserRouter([
   {
@@ -14,7 +16,15 @@ const router = createBrowserRouter([
         path: "/",
         element: <Homepage />,
       },
+      {
+        path: "about-us",
+        element: <AboutUs />,
+      },
     ],
+  },
+  {
+    path: "*",
+    element: <NotFound />,
   },
 ]);
 
