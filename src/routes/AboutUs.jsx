@@ -6,40 +6,40 @@ const members = [
     studentId: "22520495",
     name: "Trần Thị Kim Huệ",
     role: "Trưởng nhóm",
-    strengths: "",
-    weaknesses: "",
-    avatar: "",
-  },
-  {
-    studentId: "22520478",
-    name: "Trần Nguyễn Bảo Hoàng",
-    role: "Thành viên",
-    strengths: "",
-    weaknesses: "",
-    avatar: "",
-  },
-  {
-    studentId: "22520082",
-    name: "Trần Phạm Trúc Anh",
-    role: "Thành viên",
-    strengths: "",
-    weaknesses: "",
+    strengths: "Có trách nhiệm, nhiệt huyết với công việc",
+    weaknesses: "Đôi khi hơi thiếu kiên nhẫn",
     avatar: "",
   },
   {
     studentId: "22520549",
     name: "Lê Quốc Huy",
-    role: "Thành viên",
-    strengths: "",
+    role: "Phó nhóm",
+    strengths: "Khả năng giải quyết vấn đề tốt, nhanh nhẹn.",
     weaknesses: "",
     avatar: "/assets/huy.png",
+  },
+  {
+    studentId: "22520478",
+    name: "Trần Nguyễn Bảo Hoàng",
+    role: "Thư ký",
+    strengths: "Rất kĩ lưỡng, cầu toàn trong từng phân đoạn nhỏ",
+    weaknesses: "Ôm đồm nhiều việc",
+    avatar: "/assets/hoang.png",
+  },
+  {
+    studentId: "22520082",
+    name: "Trần Phạm Trúc Anh",
+    role: "Thành viên",
+    strengths: "Có tài năng hội họa, trang trí",
+    weaknesses: "Kỹ năng sắp xếp, thiết kế còn chưa tốt",
+    avatar: "/assets/anh.png",
   },
   {
     studentId: "22521255",
     name: "Nguyễn Thái Sơn",
     role: "Thành viên",
-    strengths: "",
-    weaknesses: "",
+    strengths: "Tinh thần cầu tiến, ham học hỏi",
+    weaknesses: "Khá ít nói",
     avatar: "",
   },
 ];
@@ -79,10 +79,18 @@ const MemberCard = ({ index, data }) => {
           {data.name}
         </h3>
         <div className="mt-2 flex flex-col gap-1 text-[1.25rem] font-medium">
-          <p>MSSV: {data.studentId}</p>
-          <p className="tracking-[-0.025rem]">Vai trò: {data.role}</p>
-          <p>Điểm mạnh: {data.strengths}</p>
-          <p>Điểm yếu: {data.weaknesses}</p>
+          <p>
+            <strong>MSSV:</strong> {data.studentId}
+          </p>
+          <p className="tracking-[-0.025rem]">
+            <strong>Vai trò:</strong> {data.role}
+          </p>
+          <p>
+            <strong>Điểm mạnh:</strong> {data.strengths}
+          </p>
+          <p>
+            <strong>Điểm yếu:</strong> {data.weaknesses}
+          </p>
         </div>
       </div>
     </div>

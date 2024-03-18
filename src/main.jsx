@@ -6,6 +6,10 @@ import Homepage from "./routes/Homepage.jsx";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import NotFound from "./routes/NotFound";
 import AboutUs from "./routes/AboutUs";
+import Contract from "./routes/Contract";
+import Document from "./routes/Document";
+import Project from "./routes/Project";
+import Contact from "./routes/Contact";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +23,22 @@ const router = createBrowserRouter([
       {
         path: "about-us",
         element: <AboutUs />,
+      },
+      {
+        path: "contract",
+        element: <Contract />,
+      },
+      {
+        path: "document",
+        element: <Document />,
+      },
+      {
+        path: "project",
+        element: <Project />,
+      },
+      {
+        path: "contact",
+        element: <Contact />,
       },
     ],
   },

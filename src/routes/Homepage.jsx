@@ -26,7 +26,7 @@ const Homepage = () => {
       </section>
       <section className="py-32">
         <div className="mx-auto px-4 w-full max-w-[90rem] flex flex-row items-start">
-          <div className="p-4 basis-[40%] max-w-[40%]">
+          <div className="basis-[45%] max-w-[45%]">
             <img src="/assets/pandoradev-logo.png" alt="" className="w-full" />
           </div>
           <div className="grow px-12">
