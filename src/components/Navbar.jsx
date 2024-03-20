@@ -35,7 +35,12 @@ const Navbar = () => {
       style={{ background: "linear-gradient(21deg, #0ed8ac 0%, #71a5c8 100%)" }}
     >
       <Link to="/" className="ml-[5%] w-max h-full flex flex-row items-center">
-        <img src="/assets/pandoradev-logo.png" alt="" className="h-full" />
+        <img
+          src="/assets/pandoradev-logo.png"
+          alt=""
+          className="h-full"
+          loading="eager"
+        />
       </Link>
       <div className="mx-auto flex flex-row items-center gap-6">
         {navList.map((navItem, index) => (
