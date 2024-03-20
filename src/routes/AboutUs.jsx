@@ -9,7 +9,7 @@ const members = [
     role: "Trưởng nhóm",
     strengths: "Có trách nhiệm, nhiệt huyết với công việc",
     weaknesses: "Đôi khi hơi thiếu kiên nhẫn",
-    avatar: "",
+    avatar: "/assets/hue.png",
   },
   {
     studentId: "22520549",
