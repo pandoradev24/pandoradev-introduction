@@ -14,7 +14,7 @@ const Root = () => {
     window.scrollTo(0, 0);
   };
   return (
-    <main className="relative font-['Nunito_Sans']">
+    <main className="relative font-[Nunito]">
       <Navbar />
       <Outlet />
       <Footer />

@@ -27,7 +27,7 @@ const socialMediaList = [
 const Footer = () => {
   return (
     <div
-      className="w-full font-[Inter] pt-14 "
+      className="w-full pt-14 "
       style={{
         background: "linear-gradient(21deg, #0ed8ac 0%, #71a5c8 100%)",
       }}
@@ -121,7 +121,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-8 w-full h-[1px] bg-white" />
-        <div className="py-2 w-full text-center text-white text-[1.25rem] font-[Inter] font-semibold">
+        <div className="py-2 w-full text-center text-white text-[1.25rem] font-semibold">
           © 2024 by PANDORADEV. GVHD: ThS. Tạ Việt Phương
         </div>
       </div>

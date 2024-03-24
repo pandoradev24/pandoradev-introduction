@@ -10,6 +10,8 @@ import Contract from "./routes/Contract";
 import Document from "./routes/Document";
 import Project from "./routes/Project";
 import Contact from "./routes/Contact";
+import FirstMeeting from "./components/document/FirstMeeting";
+import DocumentPage from "./components/document/DocumentPage";
 
 const router = createBrowserRouter([
   {
@@ -31,6 +33,16 @@ const router = createBrowserRouter([
       {
         path: "document",
         element: <Document />,
+        children: [
+          {
+            path: "",
+            element: <DocumentPage />,
+          },
+          {
+            path: "first-meeting",
+            element: <FirstMeeting />,
+          },
+        ],
       },
       {
         path: "project",
