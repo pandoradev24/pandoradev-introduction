@@ -104,75 +104,90 @@ const Contract = () => {
                     <p>Các mức đánh giá (theo số lượng ngôi sao):</p>
                     <ul className="ml-6 mt-2 text-[#333] text-[1.25rem] text-justify font-semibold leading-[1.7] flex flex-col gap-y-2">
                       <li>
-                        <div className="flex flex-row items-center">
-                          5
-                          <span>
+                        <div>
+                          <div className="float-start flex flex-row items-center">
+                            5
                             <img
                               src="/assets/star.svg"
                               alt=""
                               loading="eager"
                               className="size-[1.3rem]"
                             />
-                          </span>
-                          : Chủ động hoàn thành công việc ở mức xuất sắc, có
-                          những đóng góp nổi trội cho đồ án.
+                          </div>
+                          <p>
+                            : Chủ động hoàn thành công việc ở mức xuất sắc, có
+                            những đóng góp nổi trội cho đồ án.
+                          </p>
                         </div>
                       </li>
                       <li>
-                        <div className="flex flex-row items-center">
-                          4
-                          <span>
-                            <img
-                              src="/assets/star.svg"
-                              alt=""
-                              loading="eager"
-                              className="size-[1.3rem]"
-                            />
-                          </span>
-                          : Hoàn thành tốt công việc. đóng góp tốt cho bài làm.
+                        <div>
+                          <div className="float-start flex flex-row items-center">
+                            4
+                            <span>
+                              <img
+                                src="/assets/star.svg"
+                                alt=""
+                                loading="eager"
+                                className="size-[1.3rem]"
+                              />
+                            </span>
+                          </div>
+                          <p>
+                            : Hoàn thành tốt công việc. đóng góp tốt cho bài
+                            làm.
+                          </p>
                         </div>
                       </li>
                       <li>
-                        <div className="flex flex-row items-center">
-                          3
-                          <span>
-                            <img
-                              src="/assets/star.svg"
-                              alt=""
-                              loading="eager"
-                              className="size-[1.3rem]"
-                            />
-                          </span>
-                          : Hoàn thành vừa đủ công việc, có nhiều thiếu sót
-                          trong nội dung, bài làm.
+                        <div>
+                          <div className="float-start flex flex-row items-center">
+                            3
+                            <span>
+                              <img
+                                src="/assets/star.svg"
+                                alt=""
+                                loading="eager"
+                                className="size-[1.3rem]"
+                              />
+                            </span>
+                          </div>
+                          <p>
+                            : Hoàn thành vừa đủ công việc, có nhiều thiếu sót
+                            trong nội dung, bài làm.
+                          </p>
                         </div>
                       </li>
                       <li>
-                        <div className="flex flex-row items-center">
-                          2
-                          <span>
-                            <img
-                              src="/assets/star.svg"
-                              alt=""
-                              loading="eager"
-                              className="size-[1.3rem]"
-                            />
-                          </span>
-                          : Hoàn thành chưa đủ công việc.
+                        <div>
+                          <div className="float-start flex flex-row items-center">
+                            2
+                            <span>
+                              <img
+                                src="/assets/star.svg"
+                                alt=""
+                                loading="eager"
+                                className="size-[1.3rem]"
+                              />
+                            </span>
+                          </div>
+                          <p>: Hoàn thành chưa đủ công việc.</p>
                         </div>
                       </li>
                       <li>
-                        <div className="flex flex-row items-center">
-                          1
-                          <span>
-                            <img
-                              src="/assets/star.svg"
-                              alt=""
-                              loading="eager"
-                              className="size-[1.3rem]"
-                            />
-                          </span>
-                          : Chưa hoàn thành công việc của mình.
+                        <div>
+                          <div className="float-start flex flex-row items-center">
+                            1
+                            <span>
+                              <img
+                                src="/assets/star.svg"
+                                alt=""
+                                loading="eager"
+                                className="size-[1.3rem]"
+                              />
+                            </span>
+                          </div>{" "}
+                          <p> : Chưa hoàn thành công việc của mình.</p>
                         </div>
                       </li>
                     </ul>
