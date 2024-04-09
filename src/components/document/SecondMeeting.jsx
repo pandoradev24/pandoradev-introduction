@@ -9,7 +9,7 @@ const SecondMeeting = () => {
             Biên bản họp nhóm lần 2
           </h2>
           <iframe
-            src="https://drive.google.com/file/d/1UFmaXm_D0KD5s_2ttZlf-kZT3mf4JuU-/preview"
+            src="https://drive.google.com/file/d/1aMnZ38fM1KAFz1geM9s_Z9_UtuxZk72m/preview"
             allow="autoplay"
             loading="eager"
             className="w-full h-[55vh] md:h-[40rem] border-solid border-[#333] border-[0.25rem]"
