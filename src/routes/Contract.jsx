@@ -20,7 +20,7 @@ const Contract = () => {
               <h2 className="text-[#367E89] text-[2rem] font-black">
                 1. Nguyên tắc làm việc
               </h2>
-              <ul className="list-disc list-outside text-[#333] text-[1.25rem] text-justify font-semibold leading-[1.7] flex flex-col gap-y-2">
+              <ul className="ml-6 list-disc list-outside text-[#333] text-[1.25rem] text-justify font-semibold leading-[1.7] flex flex-col gap-y-2">
                 <li>
                   Giao tiếp với các thành viên trong nhóm một cách có hiệu quả:
                   luôn lắng nghe và truyền đạt ý kiến một cách rõ ràng, sử dụng
@@ -39,7 +39,7 @@ const Contract = () => {
               <h2 className="text-[#367E89] text-[2rem] font-black">
                 2. Kế hoạch họp bàn công việc
               </h2>
-              <ul className="list-disc list-outside text-[#333] text-[1.25rem] text-justify font-semibold leading-[1.7] flex flex-col gap-y-2">
+              <ul className="ml-6 list-disc list-outside text-[#333] text-[1.25rem] text-justify font-semibold leading-[1.7] flex flex-col gap-y-2">
                 <li>
                   Các thành viên phải tự đảm bảo đến lớp thực hành đầy đủ, tiến
                   hành phân chia công việc ngay sau mỗi buổi học.
@@ -61,7 +61,7 @@ const Contract = () => {
               <p className="text-[#333] text-[1.5rem] font-bold">
                 <strong>{"a) Quy tắc thưởng"}</strong>
               </p>
-              <ul className="list-disc list-outside text-[#333] text-[1.25rem] text-justify font-semibold leading-[1.7] flex flex-col gap-y-2">
+              <ul className="ml-6 list-disc list-outside text-[#333] text-[1.25rem] text-justify font-semibold leading-[1.7] flex flex-col gap-y-2">
                 <li>
                   Hoàn thành tốt công việc được phân công xuyên suốt quá trình
                   làm bài.
@@ -75,7 +75,7 @@ const Contract = () => {
               <p className="mt-1 text-[#333] text-[1.5rem] font-bold">
                 <strong>{"b) Quy tắc phạt"}</strong>
               </p>
-              <ul className="list-disc list-outside text-[#333] text-[1.25rem] text-justify font-semibold leading-[1.7] flex flex-col gap-y-2">
+              <ul className="ml-6 list-disc list-outside text-[#333] text-[1.25rem] text-justify font-semibold leading-[1.7] flex flex-col gap-y-2">
                 <li>
                   Vi phạm một trong những nguyên tắc làm việc nhóm đã đề ra.
                 </li>
@@ -91,7 +91,7 @@ const Contract = () => {
               <h2 className="text-[#367E89] text-[2rem] font-black">
                 4. Đánh giá thành viên
               </h2>
-              <ul className="list-disc list-outside text-[#333] text-[1.25rem] text-justify font-semibold leading-[1.7] flex flex-col gap-y-2">
+              <ul className="ml-6 list-disc list-outside text-[#333] text-[1.25rem] text-justify font-semibold leading-[1.7] flex flex-col gap-y-2">
                 <li>
                   Nhóm trưởng sẽ tạo form đánh giá cá nhân ở Google biểu mẫu.
                   Các thành viên sẽ nhận được nó vào tối Chủ nhật tuần trước
