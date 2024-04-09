@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import React from "react";
-import { Reveal } from "../components/Reveal";
+import { Reveal } from "../common/Reveal";
 
 const members = [
   {
@@ -49,10 +49,10 @@ const AboutUs = () => {
   return (
     <div className="py-24 w-full">
       <div className="mx-auto w-full max-w-[90rem]">
-        <h1 className="py-12 text-center text-[#333] text-[2.25rem] font-extrabold uppercase">
+        <h1 className="py-12 text-center text-[#333] text-[1.75rem] ssm:text-[2.25rem] font-extrabold uppercase">
           Giới thiệu thành viên nhóm
         </h1>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-y-16 md:gap-y-8">
           {members.map((member, index) => (
             <MemberCard key={index} index={index} data={member} />
           ))}
@@ -69,11 +69,13 @@ const MemberCard = ({ index, data }) => {
     <Reveal>
       <div
         className={clsx(
-          "w-full flex items-center justify-center gap-16",
-          index % 2 === 0 ? "flex-row" : "flex-row-reverse"
+          "px-[8%] w-full flex items-center justify-center gap-x-8 xl:gap-x-16 gap-y-4",
+          index % 2 === 0
+            ? "flex-col md:flex-row"
+            : "flex-col md:flex-row-reverse"
         )}
       >
-        <div className="p-12 basis-[30%] max-w-[30%] min-h-[15rem]">
+        <div className="xl:p-12 basis-[90%] max-w-[90%] ssm:basis-[66.67%] ssm:max-w-[66.67%] md:basis-[30%] md:max-w-[30%] min-h-[15rem] flex items-center">
           <img
             src={data.avatar}
             alt="avatar"
@@ -81,7 +83,7 @@ const MemberCard = ({ index, data }) => {
             className="w-full"
           />
         </div>
-        <div className="w-max text-[#333]">
+        <div className="lg:w-max text-[#333]">
           <h3 className="text-center text-[2.25rem] font-bold leading-[1.4]">
             {data.name}
           </h3>

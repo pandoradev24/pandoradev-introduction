@@ -5,7 +5,7 @@ const Homepage = () => {
   const navigate = useNavigate();
   return (
     <div className="relative w-full bg-white">
-      <section className="relative w-full h-[90vh] bg-[url('/assets/pandoradev.png')] bg-no-repeat bg-cover bg-bottom">
+      <section className="relative w-full h-[40vh] md:h-[90vh] bg-[url('/assets/pandoradev.png')] bg-no-repeat bg-cover bg-bottom">
         <div className="absolute bottom-8 left-[50%] animate-bounce">
           <svg
             width="17"
@@ -24,9 +24,9 @@ const Homepage = () => {
           </svg>
         </div>
       </section>
-      <section className="py-32">
-        <div className="mx-auto px-4 w-full max-w-[90rem] flex flex-row items-start">
-          <div className="basis-[45%] max-w-[45%]">
+      <section className="py-8 md:py-32">
+        <div className="mx-auto px-4 w-full max-w-[90rem] flex flex-col md:flex-row items-start gap-y-4">
+          <div className="md:basis-[45%] md:max-w-[45%]">
             <img
               src="/assets/pandoradev-logo.png"
               alt="pandoradev logo"
@@ -34,7 +34,7 @@ const Homepage = () => {
               className="w-full"
             />
           </div>
-          <div className="grow px-12">
+          <div className="grow md:px-12">
             <p className="text-justify text-[#333] text-[1.25rem] font-medium leading-[1.8] tracking-[-0.0125rem]">
               Xin chào tất cả các bạn! <br />
               Nhóm chúng mình là PandoraDev, bao gồm 5 thành viên đến từ lớp

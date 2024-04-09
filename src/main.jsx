@@ -12,6 +12,7 @@ import Project from "./routes/Project";
 import Contact from "./routes/Contact";
 import FirstMeeting from "./components/document/FirstMeeting";
 import DocumentPage from "./components/document/DocumentPage";
+import SecondMeeting from "./components/document/SecondMeeting";
 
 const router = createBrowserRouter([
   {
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
           {
             path: "first-meeting",
             element: <FirstMeeting />,
+          },
+          {
+            path: "second-meeting",
+            element: <SecondMeeting />,
           },
         ],
       },

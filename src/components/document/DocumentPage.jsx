@@ -10,25 +10,30 @@ const list = [
     illustration: First,
     url: "/document/first-meeting",
   },
+  {
+    title: "Lần 2",
+    illustration: Second,
+    url: "/document/second-meeting",
+  },
 ];
 
 const DocumentPage = () => {
   return (
     <div className="relative w-full">
-      <h1 className="py-12 text-center text-[#333] text-[2.25rem] font-extrabold uppercase">
+      <h1 className="py-12 mx-auto max-w-[90%] text-center text-[#333] text-[1.75rem] ssm:text-[2.25rem] font-extrabold uppercase">
         Biên bản họp nhóm và phân công
       </h1>
-      <div className="px-[10%] grid grid-flow-row grid-cols-3 gap-x-12 gap-y-8">
+      <div className="px-[10%] grid grid-flow-row grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-8">
         {list.map((item, index) => (
           <a
             key={index}
-            href="/document/first-meeting"
+            href={item.url}
             className="relative flex justify-center"
           >
-            <h2 className="absolute top-[10%] text-[#333] text-[2rem] font-[Nunito] font-bold leading-[1.71]">
-              Lần 1
+            <h2 className="absolute top-[5%] md:top-8% xl:top-[10%] text-[#333] text-[2rem] font-[Nunito] font-bold leading-[1.71]">
+              {item.title}
             </h2>
-            <Lottie animationData={First} loop />
+            <Lottie animationData={item.illustration} loop />
           </a>
         ))}
       </div>

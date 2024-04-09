@@ -1,22 +1,20 @@
 import React from "react";
-import { Reveal } from "../components/Reveal";
+import { Reveal } from "../common/Reveal";
 
 const Contract = () => {
   return (
     <div className="py-24 w-full">
       <div className="mx-auto w-full max-w-[90rem]">
-        <h1 className="py-12 text-center text-[#333] text-[2.25rem] font-black uppercase">
+        <h1 className="py-12 mx-auto max-w-[90%] text-center text-[#333] text-[1.75rem] ssm:text-[2.25rem] font-black uppercase">
           Hợp đồng thành lập nhóm
         </h1>
         <iframe
           src="https://drive.google.com/file/d/1klxIC4cAkjHEvTPJMrcjuJ0FKSqp8InC/preview"
-          width="640"
-          height="580"
           allow="autoplay"
           loading="eager"
-          className="mx-auto mb-4 border-solid border-[#333] border-[0.25rem]"
-        ></iframe>
-        <div className="mx-auto basis-[66.66%] max-w-[66.66%]">
+          className="mx-auto mb-4 w-[90%] h-[55vh] md:w-[40rem] md:h-[36.25rem] border-solid border-[#333] border-[0.25rem]"
+        />
+        <div className="mx-auto basis-[90%] max-w-[90%] md:basis-[80%] md:max-w-[80%] lg:basis-[66.66%] lg:max-w-[66.66%]">
           <Reveal>
             <div className="py-4 flex flex-col gap-4">
               <h2 className="text-[#367E89] text-[2rem] font-black">
