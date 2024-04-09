@@ -1,5 +1,7 @@
-import React from "react";
+import { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { Fade as Hamburger } from "hamburger-react";
+import { motion, useAnimationControls } from "framer-motion";
 
 const navList = [
   {
@@ -42,7 +44,7 @@ const Navbar = () => {
           loading="eager"
         />
       </Link>
-      <div className="mx-auto flex flex-row items-center gap-6">
+      <div className="hidden lg:flex mx-auto flex-row items-center gap-6">
         {navList.map((navItem, index) => (
           <NavLink
             key={index}
@@ -62,8 +64,85 @@ const Navbar = () => {
           </NavLink>
         ))}
       </div>
+      <MobileDrawer />
     </nav>
   );
 };
 
 export default Navbar;
+
+const MobileDrawer = () => {
+  const [state, setState] = useState(false);
+  const containerControls = useAnimationControls();
+
+  useEffect(() => {
+    if (state) {
+      containerControls.start("open");
+    } else {
+      containerControls.start("close");
+    }
+  }, [state]);
+
+  const containerVariants = {
+    close: {
+      width: "0",
+      transition: {
+        type: "spring",
+        damping: 15,
+        duration: 0.5,
+      },
+    },
+    open: {
+      width: "16.5rem",
+      transition: {
+        type: "spring",
+        damping: 15,
+        duration: 0.5,
+      },
+    },
+  };
+
+  const handleOpenClose = () => {
+    setState(!state);
+  };
+  return (
+    <div className="lg:hidden flex items-center">
+      <button
+        onClick={() => handleOpenClose()}
+        className="absolute right-[4%] !z-[5000]"
+      >
+        <Hamburger size={28} color="#367E89" toggled={state} />
+      </button>
+      <motion.div
+        variants={containerVariants}
+        animate={containerControls}
+        initial="close"
+        className="absolute z-[2000] top-0 right-0 h-screen bg-white shadow-[-50px_0_300px_0px_rgba(51,51,51,.8)]"
+      >
+        <div className="h-[5rem] border-b border-solid border-[#333]/10" />
+        <div className="pt-4 px-[1.875rem]">
+          <motion.ul
+            animate={state ? "text-[0.875rem]" : "text-[0]"}
+            className="flex flex-col space-y-4"
+          >
+            {navList.map((item, index) => (
+              <li
+                key={index}
+                className="flex-shrink-0 overflow-hidden h-[2rem] flex items-center"
+              >
+                <Link
+                  to={item.url}
+                  onClick={() => handleOpenClose()}
+                  className="h-[1.5rem] text-[#231916] font-semibold text-clip overflow-hidden"
+                >
+                  {item.label}
+                </Link>
+              </li>
+            ))}
+          </motion.ul>
+          <div className="my-[1.125rem] w-full h-px bg-[#333]/10" />
+        </div>
+      </motion.div>
+    </div>
+  );
+};
