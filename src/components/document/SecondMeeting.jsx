@@ -20,7 +20,7 @@ const SecondMeeting = () => {
             Phân công lần 2
           </h2>
           <iframe
-            src="https://drive.google.com/file/d/13wGMy80qlEDa3QTDxhyuLKI_xoqpxMtY/preview"
+            src="https://drive.google.com/file/d/1FbFiQSBbKHMEK-PLbSg6aUxL3ksn6e4K/preview"
             allow="autoplay"
             loading="eager"
             className="w-full h-[55vh] md:h-[40rem] border-solid border-[#333] border-[0.25rem]"
