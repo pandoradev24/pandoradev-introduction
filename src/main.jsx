@@ -1,18 +1,21 @@
-import "./index.css";
 import React from "react";
-import Root from "./routes/Root.jsx";
 import ReactDOM from "react-dom/client";
-import Homepage from "./routes/Homepage.jsx";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import NotFound from "./routes/NotFound";
+import DocumentPage from "./components/document/DocumentPage";
+import FifthMeeting from "./components/document/FifthMeeting";
+import FirstMeeting from "./components/document/FirstMeeting";
+import FourthMeeting from "./components/document/FourthMeeting";
+import SecondMeeting from "./components/document/SecondMeeting";
+import ThirdMeeting from "./components/document/ThirdMeeting";
+import "./index.css";
 import AboutUs from "./routes/AboutUs";
+import Contact from "./routes/Contact";
 import Contract from "./routes/Contract";
 import Document from "./routes/Document";
+import Homepage from "./routes/Homepage.jsx";
+import NotFound from "./routes/NotFound";
 import Project from "./routes/Project";
-import Contact from "./routes/Contact";
-import FirstMeeting from "./components/document/FirstMeeting";
-import DocumentPage from "./components/document/DocumentPage";
-import SecondMeeting from "./components/document/SecondMeeting";
+import Root from "./routes/Root.jsx";
 
 const router = createBrowserRouter([
   {
@@ -47,6 +50,18 @@ const router = createBrowserRouter([
             path: "second-meeting",
             element: <SecondMeeting />,
           },
+          {
+            path: "third-meeting",
+            element: <ThirdMeeting />,
+          },
+          {
+            path: "fourth-meeting",
+            element: <FourthMeeting />,
+          },
+          {
+            path: "fifth-meeting",
+            element: <FifthMeeting />,
+          }
         ],
       },
       {
